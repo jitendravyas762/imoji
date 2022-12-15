@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#wrepper{
+    width:100%;
+}
+.imoji{
+    width:300px;
+    height: 300px;
+    border:0.5rem solid black;
+    border-radius: 50%;
+    position: relative;
+    animation: me 5s 2s ease-in-out ; 
+    background-color: rgb(243, 213, 174);
+}
+@keyframes me{
+    0%{transform: rotate(0);top:0; left:0;}
+    50%{transform: rotate(360deg);top:0; left:78%; background-color:brown;}
+    100%{transform: rotate(0);top:0; left:0;}
+      
+}
+.eyebrowleft{
+    width:30px;
+    height:20px;
+    border-top:3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top:70px;
+    left:50px;
+    animation: how 1s 7s ease-in-out ;
+    z-index: 1;
+   
+}
+@keyframes how{
+    0%{
+        top:70px;
+    }
+    100%{
+        top:120px;
+    }
+}
+
+.eyebrowright{
+    width:30px;
+    height:20px;
+    border-top:3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top:70px;
+    left:200px;
+}
+.eyeleft{
+    position: absolute;
+    top:80px;
+    left:50px;
+    border:2px solid black;
+    width:30px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    animation: you 1s 7s ease-in-out ; 
+}
+@keyframes you{
+    0%{
+        top:80px;
+    }
+    100%{
+         background-color: rgb(243, 213, 174);height: 0px; top:150px;
+    }
+}
+.eyeright{
+    position: absolute;
+    top:80px;
+    left:200px;
+    border:2px solid black;
+    width:30px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff; 
+}
+.moti{
+    width:40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    top:60px;
+    left:-5px;
+
+}
+.nose{
+    position: absolute;
+    top:150px;
+    left:125px;
+    width:20px;
+    height: 60px;
+    border-radius: 50%;
+    border:2px solid black;
+}
+.mouth{
+    width:100px;
+    height: 30px;
+    border-radius: 50%;
+    border-bottom:4px solid black;
+    position:absolute;
+    top:200px;
+    left:90px;
+    animation: why 1s 7s ease-in-out ; 
+}
+@keyframes why{
+    
+    0%{
+       
+        top:200px;
+    }
+    50%{
+        transform:scale(0)
+    }
+    100%{
+       transform: scale(1.2);
+       top:200px
+    }
+}
+.tika{
+    width:18px;
+    height: 60px;
+    position: absolute;
+    top:39px;
+    left:130px;
+    border-radius: 50%;
+    border:1px solid black;
+    border-top: hidden;
+    background-color: red;
+}
